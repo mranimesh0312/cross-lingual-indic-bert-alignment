@@ -1,0 +1,49 @@
+model:
+  base_model_name: bert-base-multilingual-cased
+  use_fast_tokenizer: true
+
+languages:
+  - hi
+  - bn
+  - gu
+  - mr
+  - ta
+  - te
+  - kn
+  - ml
+  - pa
+  - or
+  - as
+
+data:
+  parallel_csv: data/sample_parallel/hi_en_sample.csv
+  source_column: source_text
+  target_column: target_text
+  source_lang_column: source_lang
+  target_lang_column: target_lang
+  wikiann_name: wikiann
+
+training:
+  max_length: 128
+  mlm_probability: 0.15
+  batch_size: 4
+  ner_batch_size: 8
+  mlm_epochs: 1
+  ner_epochs: 1
+  learning_rate: 0.00003
+  weight_decay: 0.01
+  alpha_alignment: 0.25
+  warmup_ratio: 0.06
+  seed: 42
+  fp16: false
+
+outputs:
+  root_dir: outputs
+  aligned_model_dir: outputs/aligned_model
+  ner_model_dir: outputs/ner_models
+  results_dir: outputs/results
+
+hub:
+  repo_name: cross-lingual-indic-bert-alignment
+  private: false
+

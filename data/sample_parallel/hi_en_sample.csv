@@ -1,0 +1,10 @@
+source_text,target_text,source_lang,target_lang
+"India is a diverse country.","भारत एक विविध देश है।","en","hi"
+"The capital of India is New Delhi.","भारत की राजधानी नई दिल्ली है।","en","hi"
+"The river flows through the city.","नदी शहर से होकर बहती है।","en","hi"
+"Students are learning natural language processing.","छात्र प्राकृतिक भाषा संसाधन सीख रहे हैं।","en","hi"
+"This research studies multilingual word representations.","यह शोध बहुभाषी शब्द निरूपणों का अध्ययन करता है।","en","hi"
+"Named entity recognition is useful for information extraction.","नामित इकाई पहचान सूचना निष्कर्षण के लिए उपयोगी है।","en","hi"
+"Low resource languages need better computational tools.","कम संसाधन वाली भाषाओं को बेहतर संगणकीय उपकरणों की आवश्यकता है।","en","hi"
+"Parallel sentences help align contextual embeddings.","समानांतर वाक्य संदर्भगत एम्बेडिंग को संरेखित करने में मदद करते हैं।","en","hi"
+
