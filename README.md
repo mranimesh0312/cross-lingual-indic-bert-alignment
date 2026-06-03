@@ -161,11 +161,7 @@ cross-lingual-indic-bert-alignment/
 ## Thesis Citation
 
 ```text
-Ranjan, A. Cross-lingual Alignment of Contextual Word Embedding for
+Animesh Ranjan. Cross-lingual Alignment of Contextual Word Embedding for
 Low-resource Indian Languages. M.Tech Project Report, Department of
 Computer Science and Engineering, Indian Institute of Technology Guwahati, 2021.
 ```
-
-## Notes
-
-This codebase is intentionally simplified for clarity. For thesis-grade experiments, add stronger baselines, multiple random seeds, larger parallel corpora, per-language hyperparameter sweeps, and detailed error analysis.

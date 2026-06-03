@@ -72,6 +72,6 @@ The model may inherit biases from its base model and training data. Low-resource
 ## Citation
 
 ```text
-Ranjan, A. Cross-lingual Alignment of Contextual Word Embedding for
+Animesh Ranjan. Cross-lingual Alignment of Contextual Word Embedding for
 Low-resource Indian Languages. M.Tech Project Report, IIT Guwahati, 2021.
 ```
