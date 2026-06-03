@@ -48,6 +48,8 @@ NER evaluation uses WikiANN/PAN-X through Hugging Face Datasets:
 load_dataset("wikiann", "hi")
 ```
 
+The original thesis reported WikiANN/PAN-X experiments over 787,462 examples across 11 Indian languages. See [docs/thesis_results.md](docs/thesis_results.md).
+
 ## Training Pipeline
 
 Install:
@@ -124,14 +126,24 @@ outputs/results/ner_results.csv
 outputs/results/ner_results.md
 ```
 
-Example table format:
+Historical thesis F1 comparison:
 
-| language | precision | recall | f1 | accuracy |
-| --- | --- | --- | --- | --- |
-| hi | 0.00 | 0.00 | 0.00 | 0.00 |
-| bn | 0.00 | 0.00 | 0.00 | 0.00 |
+| Language | BERT F1 | Proposed Model F1 | Delta |
+| --- | ---: | ---: | ---: |
+| pa | 0.5103 | 0.5014 | -0.0089 |
+| hi | 0.8656 | 0.8105 | -0.0551 |
+| bn | 0.9181 | 0.9036 | -0.0145 |
+| or | 0.2105 | 0.4012 | +0.1907 |
+| as | 0.9231 | 0.8806 | -0.0425 |
+| gu | 0.6804 | 0.6614 | -0.0190 |
+| mr | 0.9127 | 0.8753 | -0.0374 |
+| kn | 0.5972 | 0.6315 | +0.0343 |
+| te | 0.8431 | 0.8512 | +0.0081 |
+| ml | 0.8268 | 0.8164 | -0.0104 |
+| ta | 0.7990 | 0.8019 | +0.0029 |
+| Average | 0.7351 | 0.7395 | +0.0044 |
 
-Numbers above are placeholders. Run full training before reporting results.
+These are transcribed from the thesis report and are included for continuity with the original work. New runs from this repository will write fresh metrics to `outputs/results/`.
 
 ## Project Structure
 
@@ -157,4 +169,3 @@ Computer Science and Engineering, Indian Institute of Technology Guwahati, 2021.
 ## Notes
 
 This codebase is intentionally simplified for clarity. For thesis-grade experiments, add stronger baselines, multiple random seeds, larger parallel corpora, per-language hyperparameter sweeps, and detailed error analysis.
-

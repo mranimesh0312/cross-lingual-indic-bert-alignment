@@ -18,3 +18,8 @@ This repository recreates that theme with current Hugging Face tooling:
 
 The implementation is a clean research reproduction, not an exact archival copy of the original code.
 
+## Reported Result Pattern
+
+The thesis compared BERT and the proposed aligned model on WikiANN NER. Average F1 changed from `0.7351` for BERT to `0.7395` for the proposed model. The largest improvement was reported for Odia (`or`), from `0.2105` to `0.4012`. Improvements were also reported for Kannada, Telugu, and Tamil, while BERT remained stronger for languages such as Hindi, Bengali, Assamese, Gujarati, Marathi, Malayalam, and Punjabi.
+
+Full table: [thesis_results.md](thesis_results.md).

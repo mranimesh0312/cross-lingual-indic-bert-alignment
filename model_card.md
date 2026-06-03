@@ -50,6 +50,17 @@ Hindi, Bengali, Gujarati, Marathi, Tamil, Telugu, Kannada, Malayalam, Punjabi, O
 - WikiANN evaluation alone is not enough to validate real-world robustness.
 - Indian languages have script, morphology, domain, and dialect variation that require careful testing.
 
+## Thesis-Reported Evaluation
+
+The original thesis report compared BERT and the proposed alignment method on WikiANN NER. Reported average F1:
+
+| Model | Average F1 |
+| --- | ---: |
+| BERT | 0.7351 |
+| Proposed aligned model | 0.7395 |
+
+These values are historical thesis results, not model-card benchmark claims for a newly published checkpoint. Re-run the scripts in this repository before reporting current results.
+
 ## Not For Production
 
 Do not deploy this model in production or high-stakes settings without additional validation, fairness analysis, security review, and task-specific benchmarking.
@@ -64,4 +75,3 @@ The model may inherit biases from its base model and training data. Low-resource
 Ranjan, A. Cross-lingual Alignment of Contextual Word Embedding for
 Low-resource Indian Languages. M.Tech Project Report, IIT Guwahati, 2021.
 ```
-
